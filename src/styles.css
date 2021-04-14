@@ -1,0 +1,49 @@
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*:focus {
+    outline: 0 !important;
+}
+*:hover {
+    outline: 0 !important;
+}
+.md-fab-wrapper {
+    position: fixed;
+    bottom: 55px;
+    right: 24px;
+    z-index: 1004;
+    -webkit-transition: margin 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: margin 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .success {
+    color: #ffffff !important; 
+    background-color: #025716 !important;
+    border-color: #025716 !important;
+    
+}
+.error{
+  color: #ffffff !important;     
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+.warning{
+  color: #ffffff !important;     
+  background-color: #ffbb01 !important;
+  border-color: #ffbb01 !important;
+}
+table {
+  width: 100%;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+main{
+  padding: 20px;
+}

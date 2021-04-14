@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="mat-toolbar-example">
+  <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Simple CRUD Angular</span>
+  <span class="example-spacer"></span>  
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <nav>
+      <mat-list>
+        <mat-list-item> <a routerLink="/">Home</a> </mat-list-item>
+        <mat-list-item> <a routerLink="/roles">Roles</a> </mat-list-item>
+        <mat-list-item> <a routerLink="/profiles">Perfiles</a> </mat-list-item>
+       </mat-list>
+    </nav>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
